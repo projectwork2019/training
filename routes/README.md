@@ -4,6 +4,7 @@ Java Spring Boot application demo with RESTful routing
 - DemoApplication.java to start Spring Application
 
 Run locally, URL for game is localhost:8080/games
+Clone the repository and open in Netbeans. New Project -> Maven (Categories) -> Project with Existing POM
 
 Get list of games in JSON format by sending get request:
 
