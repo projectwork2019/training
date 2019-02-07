@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Online Coordination Games</title>
+    <link href="css/mainstyle.css" rel="stylesheet"/>
+    </head>
+  <body>
+    <div class="wrapper">
+        <h1>Online Coordination Games</h1>
+        <h2>Add new game</h2>
+        <div class="form">
+            <form action="/games" method="post">
+                <p class="formLabel">Game ID</p><input class="formField" name="gameId" value=""/><br>
+                <p class="formLabel">Game Type</p><input class="formField" name="gameType" value=""/><br>
+                <input type="submit"/>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>

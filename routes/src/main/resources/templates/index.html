@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Online Coordination Games</title>
+    <link href="css/mainstyle.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="wrapper">
+                <h1>Online Coordination Games</h1>
+        <h2>Purpose of the experiments</h2>
+        <p>We study pure coordination games, where in every outcome all players have identical payoffs, `win' or `lose'. The players are assumed to make their choices based only on common knowledge of rationality and pure reasoning, without any preplay communication or conventions. With these experiments we want to collect empirical data on the principles guiding purely rational human reasoning.</p>
+        <div class="nav">
+            <div class="link"><a href="/add">Add Game</a></div>
+        </div>
+        <div class="list">
+            <ul>
+                <li th:if="${games.empty}">No games available</li>
+                <li th:each="game : ${games}">
+                    <p class="resultrow">Game ID <span th:text="${game.gameId}">ID</span> Footprint: <span th:text="${game.gameType}">Type</span></p><a class="removelink" th:href="@{/delete/{id}(id=${game.gameId})}">delete</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>

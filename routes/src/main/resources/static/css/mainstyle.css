@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-Feb-2019, 09:45:13
+    Author     : antti
+*/
+body {
+    font-family: "Helvetica";
+}
+
+a {color:#0000FF;}      /* unvisited link */
+
+a:visited {color:#0000FF;}  /* visited link */
+
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.link {
+    margin: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: lightgrey;
+    width: 150px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+.resultrow {
+    display: inline-block;
+}
+.removelink {
+    margin-left: 12px;
+    display: inline-block;
+}
+.formField {
+    margin: 5px;
+    display: inline-block;
+}
+.formLabel {
+    width:150px;
+    display: inline-block;
+}
